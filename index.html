@@ -1,75 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html b:css='false' b:defaultmessages='false' b:responsive='true' lang='ar' dir='rtl' xmlns='http://w3.org' xmlns:b='http://google.com' xmlns:data='http://google.com' xmlns:expr='http://google.com'>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>موقعي المجاني للخدمات الرقمية</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #0f172a;
-            color: #f8fafc;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        header {
-            background-color: #1e293b;
-            padding: 20px;
-            text-align: center;
-            border-bottom: 2px solid #334155;
-        }
-        main {
-            flex: 1;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            background-color: #1e293b;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-            text-align: center;
-        }
-        .btn {
-            display: inline-block;
-            background-color: #3b82f6;
-            color: white;
-            padding: 12px 24px;
-            margin-top: 20px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background 0.3s;
-        }
-        .btn:hover {
-            background-color: #2563eb;
-        }
-        footer {
-            text-align: center;
-            padding: 15px;
-            background-color: #1e293b;
-            color: #94a3b8;
-            font-size: 14px;
-        }
-    </style>
+    <meta charset='UTF-8'/>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
+    <title><data:blog.pageName/> - مدونة المنوعات الرقمية</title>
+    <b:skin><![CDATA[
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #f4f6f9; color: #333; line-height: 1.6; }
+        header { background-color: #1a237e; color: #ffffff; padding: 20px; text-align: center; }
+        nav { background-color: #0d47a1; display: flex; justify-content: center; flex-wrap: wrap; }
+        nav a { color: white; padding: 14px 20px; text-decoration: none; text-align: center; font-weight: bold; }
+        nav a:hover { background-color: #1565c0; }
+        .container { max-width: 1200px; margin: 20px auto; padding: 0 20px; }
+        
+        /* ⚠️ مكان مخصص ومحمي لكود إعلان A-Ads */
+        .ad-container { background-color: #fff9c4; border: 2px dashed #fbc02d; padding: 20px; text-align: center; margin-bottom: 20px; border-radius: 8px; font-weight: bold; color: #57606f; }
+        
+        .main-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .card { background-color: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .card-header { padding: 15px; color: white; font-size: 1.2rem; font-weight: bold; text-align: center; }
+        .tech { background-color: #00bcd4; }
+        .games { background-color: #e91e63; }
+        .news { background-color: #ff9800; }
+        .cooking { background-color: #4caf50; }
+        .card-body { padding: 20px; }
+        .card-body p { font-size: 0.95rem; color: #555; margin-bottom: 15px; }
+        .btn { display: block; text-align: center; background-color: #333; color: white; padding: 10px; text-decoration: none; border-radius: 4px; font-size: 0.9rem; }
+        .btn:hover { background-color: #555; }
+        footer { background-color: #222; color: white; text-align: center; padding: 15px; margin-top: 40px; font-size: 0.9rem; }
+    ]]></b:skin>
 </head>
 <body>
+    <!-- الهيكل الأساسي لـ Blogger -->
+    <b:section id='main-header' maxwidgets='1' showaddelement='no'>
+        <b:widget id='Header1' locked='true' title='عنوان المدونة' type='Header' version='1'>
+            <b:includable id='main'>
+                <header>
+                    <h1><data:title/></h1>
+                    <p><data:description/></p>
+                </header>
+            </b:includable>
+        </b:widget>
+    </b:section>
 
-    <header>
-        <h1>أهلاً بك في منصتي الرقمية</h1>
-        <p>موقعك المجاني الأول للربح والخدمات</p>
-    </header>
+    <nav>
+        <a href='#tech'>💻 تقنية</a>
+        <a href='#games'>🎮 ألعاب</a>
+        <a href='#news'>📰 أخبار</a>
+        <a href='#cooking'>🍳 طبخ</a>
+    </nav>
 
-    <main>
-        <h2>محتوى الموقع التجريبي</h2>
-        <p>هذه الصفحة مهيأة وجاهزة لربطها بشبكات الإعلانات وعرض محتواك أو أدواتك البرمجية للزوار.</p>
-        <a href="#" class="btn">اكتشف المزيد</a>
-    </main>
+    <div class="container">
+        
+        <!-- 💰 وضع كود إعلان A-Ads الخاص بك هنا لربح المال من الزوار الحقيقيين المضمونين ومحاربة الحظر 💰 -->
+        <div class="ad-container">
+            <!-- 🔽 احذف السطرين بالأسفل وضع كود الـ <iframe المأخوذ من A-Ads هنا 🔽 -->
+            <p>📢 مساحة أرباح المشاهدات والنقرات الحقيقية لتجنب حظر الحساب</p>
+            <p style="font-size: 0.8rem; color: #7f8c8d; font-weight: normal;">(سر الأرباح المضمونة هو نشر مقالات يبحث عنها الناس لجلب زوار حقيقيين من جوجل وتجنب الزوار الوهميين)</p>
+            <!-- 🔼 احذف السطرين بالأسفل وضع كود الـ <iframe المأخوذ من A-Ads هنا 🔼 -->
+        </div>
+
+        <div class="main-content">
+            <!-- قسم التقنية -->
+            <div class="card" id="tech">
+                <div class="card-header tech">💻 قسم التقنية</div>
+                <div class="card-body">
+                    <p>اكتشف أحدث شروحات البرامج، مراجعات الهواتف الذكية، وأسرار الذكاء الاصطناعي وكيفية الاستفادة منه في حياتك اليومية.</p>
+                    <a href="#" class="btn">تصفح المقالات</a>
+                </div>
+            </div>
+
+            <!-- قسم الألعاب -->
+            <div class="card" id="games">
+                <div class="card-header games">🎮 قسم الألعاب</div>
+                <div class="card-body">
+                    <p>تحميل أحدث الألعاب، شروحات تخطي المستويات الصعبة، ومراجعات شاملة لألعاب البلايستيشن، الكمبيوتر، والهواتف.</p>
+                    <a href="#" class="btn">تصفح المقالات</a>
+                </div>
+            </div>
+
+            <!-- قسم الأخبار -->
+            <div class="card" id="news">
+                <div class="card-header news">📰 قسم الأخبار</div>
+                <div class="card-body">
+                    <p>تغطية إخبارية حصرية ومباشرة على مدار الساعة لأهم الأحداث العالمية والمحلية بأسلوب موثوق وسريع الزوار الحقيقيين.</p>
+                    <a href="#" class="btn">تصفح المقالات</a>
+                </div>
+            </div>
+
+            <!-- قسم الطبخ -->
+            <div class="card" id="cooking">
+                <div class="card-header cooking">🍳 قسم الطبخ</div>
+                <div class="card-body">
+                    <p>وصفات طبخ شهية وسهلة التحضير من المطبخ العربي والعالمي، بالإضافة إلى نصائح غذائية وأسرار نجاح الأكلات.</p>
+                    <a href="#" class="btn">تصفح المقالات</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- إخفاء محتوى بلوجر التلقائي للحفاظ على تصميمك -->
+    <div style='display:none;'>
+        <b:section id='main-posts' maxwidgets='1' showaddelement='yes'>
+            <b:widget id='Blog1' locked='false' title='رسائل المدونة الإلكترونية' type='Blog' version='1'/>
+        </b:section>
+    </div>
 
     <footer>
-        <p>جميع الحقوق محفوظة &copy; 2026</p>
+        <p>جميع الحقوق محفوظة © مدونتي مجانية ومضمونة 2026</p>
+        <p style="font-size: 0.75rem; color: #aaa; margin-top: 5px;">تنبيه هام: الطرق المخادعة تؤدي إلى حظر موقعك فوراً وخسارة أرباحك، نعتمد على محرك بحث جوجل فقط.</p>
     </footer>
-
 </body>
 </html>
